@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EODB</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/529a13f4d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar p-5 bg-[#0f171e] flex justify-between">
+        <div class="logo-list flex items-center ">
+            <div class="logo pr-3 pl-6 ">
+                <img class="w-28" src="download.svg" alt="">
+            </div>
+            <div class="nav-links mx-3 space-x-4 text-lg text-[rgba(242,244,246,.9)] flex font-sans ">
+                <li class="list-none"><a class="border-b-[1px] border-transparent focus:border-white" href="#">Home</a></li>
+                <li class="list-none"><a class="border-b-[1px] border-transparent focus:border-white" href="#">Store</a></li>
+                <li class="list-none"><a class="border-b-[1px] border-transparent focus:border-white" href="#">Channels</a></li>
+                <li class="list-none">
+                    <a class="border-b-[1px] border-transparent focus:border-white" href="#">Categories</a>
+                    <i class="fa-solid fa-2xs fa-caret-down fa-duotone" style="--fa-primary-opacity: 0.10"></i>
+                </li>
+                <li class="list-none"><a class="border-b-[1px] border-transparent focus:border-white" href="#">My Stuff</a></li>
+            </div>
+        </div>
+        <div class="account-search flex text-[rgba(242,244,246,.9)] items-center space-x-3 mr-6">
+            <div class="search">
+                <div class="mr-4">
+                    <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                </div>
+            </div>
+            <div class="account flex space-x-3">
+                <div>
+                    <i class="fa-solid fa-2xl fa-circle-user"></i>
+                </div>
+                <span>User</span>
+                <div>
+                    <i class="fa-solid fa-2xs fa-caret-down fa-duotone" style="--fa-primary-opacity: 0.10"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT SECTION -->
+
+    <div class="content-section-carousel">
+        <img src="https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_TheMatrixResurrectionsNew_Launch/18ee7ad3-1717-49c5-9cb1-27bdf4ee1b38._UR3000,600_SX3000_FMwebp_.jpeg" alt="">
+    </div>
+    <div class="content-section-list bg-[#0f171e] text-white flex ">
+        <h1 class="absolute m-7 pl-4 font-semibold text-xl">Continue Watching</h1>
+        <div class="watchlist py-16 px-10">
+            <div class="grid grid-cols-4 gap-2">
+                <div class="hover:scale-110 hover:z-40 transition-all relative " onmouseover={handlemouseOver()} onmouseout={handlemouseOut()}>
+                    <div class="absolute z-0 "><img src="https://m.media-amazon.com/images/G/01/digital/video/web/cues/v3/prime.svg" alt=""></div>
+                    <img class="rounded-md" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/1b85c14e70599c52f2b3477806a3c104d7a519b5867b68e1b3e18e44881040ad._UR1920,1080_RI_SX712_FMwebp_.jpg" alt="">
+                    <div class="card-info-media absolute z-30 bg-slate-600 w-full  hidden transition-all duration-500">
+                        <h1>Harry Potter</h1>
+                        <h1>Included with prime</h1>
+                    </div>
+                </div>
+                <div class="hover:scale-110 transition-all">
+                    <div class="absolute"><img src="https://m.media-amazon.com/images/G/01/digital/video/web/cues/v3/prime.svg" alt=""></div>
+                    <img class="rounded-md " src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/f8dc6dc2d8f61abb27b88fe78415e83ea68f6c2078ee3c3659a837de8c37f9aa._UR1920,1080_RI_SX712_FMwebp_.jpg" alt="">
+                </div>
+                <div class="hover:scale-110 transition-all">
+                    <div class="absolute"><img src="https://m.media-amazon.com/images/G/01/digital/video/web/cues/v3/prime.svg" alt=""></div>
+                    <img class="rounded-md" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/e46fce3bbd608311305ba1eaefe63ff4d3a6fdba7e95cbf9e4305f90eb6b173d._UR1920,1080_RI_SX712_FMwebp_.jpg" alt="">
+                </div>
+                <div class="hover:scale-110 transition-all">
+                    <div class="absolute"><img src="https://m.media-amazon.com/images/G/01/digital/video/web/cues/v3/prime.svg" alt=""></div>
+                    <img class="rounded-md" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/3645af6707cd9483525d51f9134d7261efa7e1a8525a1ef72227771a0c52f671._UR1920,1080_RI_SX712_FMwebp_.png" alt="">
+                </div>
+                <div class="hover:scale-110 transition-all">
+                    <div class="absolute"><img src="https://m.media-amazon.com/images/G/01/digital/video/web/cues/v3/prime.svg" alt=""></div>
+                    <img class="rounded-md" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/2ac0170b20e02968c90eb1a11a0e25cc8834ac163d698a3188b0f3e64b04e0b7._UR1920,1080_RI_SX712_FMwebp_.jpg" alt="">
+                </div>
+                <div class="hover:scale-110 transition-all">
+                    <div class="absolute"><img src="https://m.media-amazon.com/images/G/01/digital/video/web/cues/v3/prime.svg" alt=""></div>
+                    <img class="rounded-md" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/10107c4794fbde1a9478563232b035d79d3b2d8823314e21543ef99c4f20067c._UR1920,1080_RI_SX712_FMwebp_.jpg" alt="">
+                </div>
+                <div class="hover:scale-110 transition-all">
+                    <div class="absolute"><img src="https://m.media-amazon.com/images/G/01/digital/video/web/cues/v3/prime.svg" alt=""></div>
+                    <img class="rounded-md" src="https://images-eu.ssl-images-amazon.com/images/S/pv-target-images/a5ecd08b25820aa23bf00d632994cdf014bf73db02f6d1c7af6be239938fc461._UR1920,1080_RI_SX712_FMwebp_.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const handlemouseOver = ()=> {
+            var x = document.getElementsByClassName('card-info-media')[0] ;
+            console.log(x) ;
+            x.classList.remove("hidden")
+            x.classList.add("block") ;
+            console.log(x) ;
+        }
+        const handlemouseOut = ()=> {
+            var x = document.getElementsByClassName('card-info-media')[0] ;
+            x.classList.remove("block")
+            x.classList.add("hidden") ;
+            console.log(x) ;
+        }
+    </script>
+</body>
+</html>
